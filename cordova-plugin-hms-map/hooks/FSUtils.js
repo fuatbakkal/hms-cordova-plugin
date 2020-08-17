@@ -16,8 +16,8 @@ Copyright 2020. Huawei Technologies Co., Ltd. All rights reserved.
 
 'use strict';
 
-var fs = require('fs');
-
+var fs = require('fs-copy-file-sync');
+var copyFileSync = require('fs-copy-file-sync');
 
 var FSUtils = (function () {
     var api = {};
@@ -30,15 +30,15 @@ var FSUtils = (function () {
     }
 
     api.copyFile = function (src, dest) {
-        fs.copyFileSync(src, dest);
+        copyFileSync(src, dest);
     }
 
     api.readFile = function (path, encoding) {
         return fs.readFileSync(path, encoding);
     }
 
-    api.writeFile = function(path, content) {
-        fs.writeFileSync(path,content);
+    api.writeFile = function (path, content) {
+        fs.writeFileSync(path, content);
     }
 
     return api;

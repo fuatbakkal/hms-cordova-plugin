@@ -1,7 +1,7 @@
 {
   "name": "@hmscore/cordova-plugin-hms-map",
   "title": "Cordova HMS Map Kit",
-  "description": "Cordova HMS Map Kit", 
+  "description": "Cordova HMS Map Kit",
   "packagename": "cordova-map",
   "packageversion": "4.0.4.300",
   "version": "4.0.4",
@@ -26,10 +26,12 @@
       "android"
     ]
   },
-  "engines": [{
-    "name": "cordova",
-    "version": ">=3.0.0"
-  }],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
   "devDependencies": {
     "eslint": "^3.19.0",
     "eslint-config-semistandard": "^11.0.0",
@@ -38,6 +40,9 @@
     "eslint-plugin-node": "^5.0.0",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1"
+  },
+  "dependencies": {
+    "fs-copy-file-sync": "^1.1.1"
   },
   "files": [
     "res/**",
