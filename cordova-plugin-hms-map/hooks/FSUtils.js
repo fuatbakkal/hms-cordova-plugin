@@ -16,7 +16,7 @@ Copyright 2020. Huawei Technologies Co., Ltd. All rights reserved.
 
 'use strict';
 
-var fs = require('fs-copy-file-sync');
+var fs = require('fs');
 var copyFileSync = require('fs-copy-file-sync');
 
 var FSUtils = (function () {
